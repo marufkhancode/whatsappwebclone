@@ -1,4 +1,135 @@
 @charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .left-bar {
   background-color: lightgray;
 }
@@ -241,7 +372,7 @@
   box-sizing: border-box;
   display: flex;
   background-color: #eeeeee;
-  height: 59px;
+  height: 8%;
   width: 100%;
   align-items: center;
   position: relative;
@@ -526,15 +657,12 @@
 }
 .main-div .right-bar footer {
   display: flex;
-  flex-direction: row;
   z-index: 1;
-  min-height: 55px;
+  min-height: 8%;
   position: relative;
-  flex: none;
   width: 100%;
   box-sizing: border-box;
-  padding: 5px;
-  margin-top: -10px;
+  padding: 3px;
   background-color: #f5f1ee;
 }
 .main-div .right-bar footer .left {

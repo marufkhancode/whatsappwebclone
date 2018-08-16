@@ -1,3 +1,4 @@
+@import "reset";
 @import "variables";
 @import "mixins";
 .left-bar {
@@ -237,7 +238,7 @@
             box-sizing: border-box;
             display: flex;
             background-color: $whatsapp-header-gray;
-            height: 59px;
+            height: 8%;
             width: 100%;
             align-items: center;
             position: relative;
@@ -393,15 +394,12 @@
         }
         footer {
             display: flex;
-            flex-direction: row;
             z-index: 1;
-            min-height: 55px;
+            min-height: 8%;
             position: relative;
-            flex: none;
             width: 100%;
             box-sizing: border-box;
-            padding: 5px;
-            margin-top: -10px;
+            padding: 3px;
             background-color: #f5f1ee; // background-color: rgba(255, 255, 255, 0.6);
             .left {
                 @include footericon;

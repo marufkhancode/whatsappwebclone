@@ -1,0 +1,74 @@
+@mixin righticons {
+    cursor: pointer;
+    padding-right: 30px;
+    color: $icon-gray;
+    font-size: 1.1rem;
+}
+
+@mixin footericon {
+    cursor: pointer;
+    display: flex;
+    max-height: 45px;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    color: $icon-gray;
+}
+
+@mixin person-name($color) {
+    font-weight: 600;
+    font-size: 15px;
+    color: $color; // #35cd96 !important;
+}
+
+@mixin person-message {
+    font-size: 15px;
+}
+
+@mixin time-right {
+    float: right;
+    color: rgba(0, 0, 0, 0.45);
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    height: 15px;
+    line-height: 15px;
+    white-space: nowrap;
+    margin: 1px 2px 0px 0px;
+}
+
+@mixin chat-tail($left, $bg-color) {
+    background-color: $bg-color;
+    content: "\00a0";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    transform: rotate( 46deg) skew( -42deg);
+    -moz-transform: rotate( 29deg) skew( -35deg);
+    -webkit-transform: rotate( 29deg) skew( -35deg);
+    width: 20px;
+    left: $left;
+}
+
+@mixin blue-center-div ($top) {
+    height: 20px;
+    max-width: 100% !important;
+    background-color: rgba(225, 245, 254, 0.92);
+    border-radius: 7.5px;
+    padding: 5px 12px 6px 12px;
+    text-align: center;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    left: 50%;
+    top: $top;
+    position: absolute;
+}
+
+@mixin chat-box($bgcolor, $margin) {
+    position: absolute;
+    background-color: $bgcolor;
+    padding: 12px;
+    border-radius: 4%;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+    margin: $margin;
+}
